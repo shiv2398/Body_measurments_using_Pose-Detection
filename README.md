@@ -9,28 +9,57 @@ This project aims to approximate body measurements using pose landmarks extracte
 - Pandas (version latest)
 - scikit-learn (version latest)
 - <add any other dependencies>
-
-## Data Approximation
-The data approximation phase involves extracting joint distances using a pose detection model and saving the results into a data frame. To perform data approximation, follow these steps:
-
+## Usage 
 1. Install the required dependencies by running the following command:
  
  ``` pip install -r requirements.txt ```
 
-2. Run the main file in the data approximation mode using the following command:
-`python3 Body_measurements/main.py data_approximation --csv_path Measurements.xlsx - Sheet1.csv --image_path Data`
+## Data Approximation
+The data approximation phase involves extracting joint distances using a pose detection model and saving the results into a data frame. To perform data approximation, follow these steps:
+
+
+
+### Data Approximation Mode:
+
+Command: ```python main.py data_approximation --csv_path <csv_path> --image_path <image_path>```
+
+** Description:**
+
+Performs data approximation using pose landmarks extracted from the image data.
+Arguments:
+`--csv_path`: Specifies the path to the CSV file containing the data.
+`--image_path`: Specifies the path to the image file.
+
 
 ## Training
 
-The training mode focuses on mapping the approximate values to target values using various regression models. It offers the following functionalities:
+Regression Training Mode:
 
-- Single Model Functionality: Approximate all the columns with a single regression model. To use this functionality, run the following command:
+Command: ```python main.py regression_training --measurements_csv_path <measurements_csv_path> --separate_model_train <True/False> --model_name <model_name>```
 
-- Multiple Model Functionality: Approximate each column with a different regression model. To use this functionality, run the following command:
+Description:
+
+Performs regression model training to map the approximate values to target values.
+Arguments:
+`--measurements_csv_path:` Specifies the path to the CSV file containing the measurements data.
+`--separate_model_train:` Specifies whether to train one model for different columns (True/False).
+`--model_name:` Specifies the name of the model.
+
 
 ## Testing
 
 The testing mode allows users to input an image and obtain body measurements in inches and centimeters. To perform testing, use the following command:
+
+
+Command: ```python main.py testing --image_path <image_path>```
+
+Description:
+
+Performs testing with new image data to obtain body measurements.
+
+Arguments:
+`--image_path:` Specifies the path to the image file.
+
 
 
 
