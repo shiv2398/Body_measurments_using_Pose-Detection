@@ -1,0 +1,62 @@
+{
+  "Linear Regression": {
+      "model": "LinearRegression",
+      "hyperparameters": {}
+  },
+  "Ridge Regression": {
+      "model": "Ridge",
+      "hyperparameters": {
+          "alpha": 0.1
+      }
+  },
+  "Lasso Regression": {
+      "model": "Lasso",
+      "hyperparameters": {
+          "alpha": 0.1
+      }
+  },
+  "ElasticNet Regression": {
+      "model": "ElasticNet",
+      "hyperparameters": {
+          "alpha": 0.1,
+          "l1_ratio": 0.2
+      }
+  },
+  "Decision Tree Regression": {
+      "model": "DecisionTreeRegressor",
+      "hyperparameters": {
+          "max_depth": null,
+          "min_samples_split": 2
+      }
+  },
+  "Random Forest Regression": {
+      "model": "RandomForestRegressor",
+      "hyperparameters": {
+          "n_estimators": 10,
+          "max_depth": null,
+          "min_samples_split": 2
+      }
+  },
+  "Support Vector Regression": {
+      "model": "SVR",
+      "hyperparameters": {
+          "C": 0.1,
+          "kernel": "linear"
+      }
+  },
+  "K-Nearest Neighbors Regression": {
+      "model": "KNeighborsRegressor",
+      "hyperparameters": {
+          "n_neighbors": 3,
+          "weights": "uniform"
+      }
+  },
+  "Gradient Boosting Regression": {
+      "model": "GradientBoostingRegressor",
+      "hyperparameters": {
+          "n_estimators": 50,
+          "learning_rate": 0.1,
+          "max_depth": 3
+      }
+  }
+}
