@@ -1,0 +1,20 @@
+joints:
+  - Joint 0: right_ankle
+  - Joint 1: right_knee
+  - Joint 2: right_hip
+  - Joint 3: left_hip
+  - Joint 4: left_knee
+  - Joint 5: left_ankle
+  - Joint 6: right_wrist
+  - Joint 7: right_elbow
+  - Joint 8: right_shoulder
+  - Joint 9: left_shoulder
+  - Joint 10: left_elbow
+  - Joint 11: left_wrist
+  - Joint 12: right_eye
+  - Joint 13: left_eye
+  - Joint 14: right_ear
+  - Joint 15: left_ear
+
+csv_approximate_path:
+    path: Body_measurements/Data
