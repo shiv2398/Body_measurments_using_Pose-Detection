@@ -17,21 +17,24 @@ You can install the required dependencies by running the following command:
 ```pip install -r requirements.txt```
 ## Usage
 
-1. **Approximation of Measurements**: The first step is to approximate body measurements using pose landmarks from the image data. Use the following command to perform the approximation:
+1. **Approximation of Measurements**:
+2. The first step is to approximate body measurements using pose landmarks from the image data.
+3. Main file of this project can be run into three modes ```data approximation```,```training```,```testing```
+### Data approximation : 
+ 1. In this phase main file use several functions to extract the joint distances using the pose detection model and save it into a data frame
+ 2. command for data approximation
 
-Replace `<image_directory>` with the path to the directory containing the image data and `<original_data_csv>` with the path to the original data CSV file.
+** Training** 
+1. In this mode main function use more than 10 models of regressions to map the approximate values to target values
+2. it also provide several functionality
+3. single model functionality (approximate all the column with one regression model)
+4. Multiple model functionality (approximate all the columns by different models on each columns )
+   
 
-2. **Training Regression Models**: After approximating the measurements, the next step is to train regression models to refine the approximated data and match it with the real values. Use the following command to train the regression models:
+**Testing**
+1.Testing mode is only for user , it takes an input image and then return body measurements in inches and cm also.
 
 
-Replace `<original_data_csv>`, `<approximated_data_csv>`, `<columns_to_train>`, `<model_name>`, and `<model_save_path>` with the respective file paths and model configuration.
-
-3. **Testing**: Once the regression models are trained, you can test them using new data. Use the following command to perform the testing:
-
-
-Replace `<test_data_csv>` with the path to the test data CSV file and `<model_name>` with the name of the trained model.
-
-Feel free to explore the code files for more detailed usage and customization options.
 
 
 
