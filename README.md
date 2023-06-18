@@ -14,7 +14,7 @@ To use this project, make sure you have the following dependencies installed:
 - <add any other dependencies>
 
 You can install the required dependencies by running the following command:
-'''pip install -r requirements.txt'''
+```pip install -r requirements.txt```
 ## Usage
 
 1. **Approximation of Measurements**: The first step is to approximate body measurements using pose landmarks from the image data. Use the following command to perform the approximation:
