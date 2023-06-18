@@ -1,0 +1,49 @@
+regression_model:
+  - Linear Regression:
+      hyperparameters: {}
+
+  - Ridge Regression:
+      hyperparameters:
+        alpha: [0.1, 1.0, 10.0]
+
+  - Lasso Regression:
+      hyperparameters:
+        alpha: [0.1, 1.0, 10.0]
+
+  - ElasticNet Regression:
+      hyperparameters:
+        alpha: [0.1, 1.0, 10.0]
+        l1_ratio: [0.2, 0.5, 0.8]
+
+  - Decision Tree Regression:
+      hyperparameters:
+        max_depth: [null, 5, 10]
+        min_samples_split: [2, 5, 10]
+
+  - Random Forest Regression:
+      hyperparameters:
+        n_estimators: [10, 50, 100]
+        max_depth: [null, 5, 10]
+        min_samples_split: [2, 5, 10]
+
+  - Support Vector Regression:
+      hyperparameters:
+        C: [0.1, 1.0, 10.0]
+        kernel: ['linear', 'rbf']
+
+  - K-Nearest Neighbors Regression:
+      hyperparameters:
+        n_neighbors: [3, 5, 7]
+        weights: ['uniform', 'distance']
+
+  - Gradient Boosting Regression:
+      hyperparameters:
+        n_estimators: [50, 100, 200]
+        learning_rate: [0.1, 0.01, 0.001]
+        max_depth: [3, 5, 10]
+
+  - XGBoost Regression:
+      hyperparameters:
+        n_estimators: [50, 100, 200]
+        learning_rate: [0.1, 0.01, 0.001]
+        max_depth: [3, 5, 10]
