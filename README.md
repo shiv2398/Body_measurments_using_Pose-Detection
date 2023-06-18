@@ -23,7 +23,7 @@ The data approximation phase involves extracting joint distances using a pose de
 
 Command: ```python main.py data_approximation --csv_path <csv_path> --image_path <image_path>```
 
-** Description:**
+**Description:**
 
 Performs data approximation using pose landmarks extracted from the image data.
 Arguments:
@@ -37,13 +37,13 @@ Regression Training Mode:
 
 Command: ```python main.py regression_training --measurements_csv_path <measurements_csv_path> --separate_model_train <True/False> --model_name <model_name>```
 
-Description:
+**Description:**
 
-Performs regression model training to map the approximate values to target values.
-Arguments:
-`--measurements_csv_path:` Specifies the path to the CSV file containing the measurements data.
-`--separate_model_train:` Specifies whether to train one model for different columns (True/False).
-`--model_name:` Specifies the name of the model.
+ Performs regression model training to map the approximate values to target values.
+ Arguments:
+ `--measurements_csv_path:` Specifies the path to the CSV file containing the measurements data.
+ `--separate_model_train:` Specifies whether to train one model for different columns (True/False).
+ `--model_name:` Specifies the name of the model.
 
 
 ## Testing
@@ -53,12 +53,12 @@ The testing mode allows users to input an image and obtain body measurements in 
 
 Command: ```python main.py testing --image_path <image_path>```
 
-Description:
+**Description:**
 
 Performs testing with new image data to obtain body measurements.
 
-Arguments:
-`--image_path:` Specifies the path to the image file.
+ Arguments:
+ `--image_path:` Specifies the path to the image file.
 
 
 
