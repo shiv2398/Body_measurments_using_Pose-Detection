@@ -28,7 +28,7 @@ Command: ```python main.py data_approximation --csv_path <csv_path> --image_path
 Performs data approximation using pose landmarks extracted from the image data.
 Arguments:
 `--csv_path`: Specifies the path to the CSV file containing the data.
-`--image_path`: Specifies the path to the image file.
+`--image_path`: Specifies the path to the image dir `Data`.
 
 
 ## Training
